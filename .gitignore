@@ -1,0 +1,4 @@
+# The executable goose build writes
+/gffs
+# The Goose compiler, cloned and built by scripts/setup-goose.sh
+/goose/

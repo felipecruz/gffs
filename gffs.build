@@ -1,0 +1,7 @@
+// The C behind gffs: native.c, and PCRE2 (libpcre2-8) from the system.
+c_sources = ["native.c"];
+c_libs_linux = ["pcre2-8"];
+// Homebrew keeps PCRE2 outside the default search paths (/usr/local on an
+// Intel Mac instead of /opt/homebrew).
+c_include_macos = ["/opt/homebrew/opt/pcre2/include"];
+c_libs_macos = ["pcre2-8 -L/opt/homebrew/opt/pcre2/lib"];
